@@ -137,6 +137,8 @@ if __name__ == '__main__':
         # server/docker部署
         # 根据环境变量获取运行间隔时间，默认6小时运行一次
         run_per_hours = int(os.environ["RUN_PER_HOURS"]) if os.environ.get("RUN_PER_HOURS") else 6
+        # 设置第一次运行的时间为 00:00
+        schedule.every().day.at("00:00:00").do(sub_process_start)
         schedule.every(run_per_hours).hours.do(sub_process_start)
         schedule.run_all()
         while 1:
