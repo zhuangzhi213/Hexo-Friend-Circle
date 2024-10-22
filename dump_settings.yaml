@@ -1,6 +1,7 @@
 BLOCK_SITE:
 - https://hexo.io/zh-tw/
 - https://theme-next.js.org/
+- https://www.haoruanmao.com/
 DATABASE: sqlite
 DEPLOY_TYPE: github
 GITEE_FRIENDS_LINKS:
