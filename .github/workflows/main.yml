@@ -1,11 +1,11 @@
-name: update-friends-posts
+name: '自动化获取友链文章'
 
 on:
   push:
     branches:
       - main
   schedule:
-    - cron: "0 0,6,12,18,21 * * *"
+    - cron: "0 0,6,9,12,15,18,21 * * *"
   workflow_dispatch:
 
 env:
